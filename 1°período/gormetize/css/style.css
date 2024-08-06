@@ -1,0 +1,1347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: transparent;
+}
+
+.menu {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    float: left;
+    height: 40px;
+    width: 250px;
+}
+
+.menuItems {
+    display: flex;
+    gap: 2%;
+    padding: 1.5rem;
+    list-style: none;
+}
+
+.menuNav {
+    text-decoration: none;
+    color: #B52b19;
+    padding: 1.5rem;
+}
+
+.menu #search {
+    background-color: white;
+    border: solid 1px #B52b19;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+#bttSearch {
+    float: right;
+}
+
+.menu .perfil img {
+    height: 6vh;
+    width: 15.5vh;
+    margin-top: 10px;
+}
+
+.menu .perfil img.reverse {
+    height: 6.5vh;
+    width: 6.5vh;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.title-pag {
+    font-family: "Orelega One", serif;
+    color: #B52b19;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.title-pag hr {
+    border: 2px solid #B52b19;
+}
+
+/* Main */
+
+.restaurants {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 10px;
+}
+
+.restaurant {
+    margin-top: 5px;
+    text-align: center;
+    background-color: #FEF4EE;
+    height: 100%;
+    width: 30%;
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.2);
+
+}
+
+.restaurant img {
+    max-width: 95%;
+    margin-top: 10px;
+}
+
+.restaurant .text a {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Orelega One', serif;
+    color: #B52b19;
+    font-weight: 200;
+}
+
+.restaurant p {
+    color: #565151;
+    font-weight: bold;
+}
+
+.restaurant .cupom {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.restaurant .cupom p {
+    height: 25px;
+    width: 250px;
+    max-width: 80%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #B2ECC8;
+    border-radius: 10px;
+}
+
+/* Search */
+
+.center-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    background-color: #B52b19;
+    width: 900px;
+    height: 500px;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.search-container #search {
+    background-color: white;
+    border: solid 1px #B52b19;
+    border-radius: 20px;
+    width: 800px;
+    height: 30px;
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+
+.search-container #search button {
+    background-color: transparent;
+    position: relative;
+    right: -47%;
+    cursor: pointer;
+}
+
+.search-container #search input {
+    height: 30px;
+    width: 800px;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 8px 10px;
+}
+
+.search-container h1 {
+    color: #ffffff;
+    position: relative;
+    width: 755px;
+    height: 31px;
+    left: calc(50% - 755px/2 - 0.5px);
+    top: 10%;
+    font-family: "Orelega One", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.filters-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    position: relative;
+    top: 15%;
+}
+
+.filters-group h4 {
+    font-family: 'Orelega One', serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.button-filter {
+    background-color: #FCE7D8;
+    color: #EC6F40;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    font-style: italic;
+    height: 25px;
+    width: 150px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.button-filter.clicked {
+    background-color: #EC6F40;
+    color: #FCE7D8;
+}
+
+/* Login / Create Account */
+
+
+.forms {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms form {
+    background-color: #ffffff;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+
+}
+
+.forms p {
+    font-family: "Orelega One", serif;
+    color: #B52b19;
+    font-size: 40px;
+    width: 300px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+    left: 9%;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #B52b19;
+}
+
+.form-group input {
+    width: 245px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid #B52b19;
+    padding: 8px 10px;
+
+}
+
+::placeholder {
+    font-family: Arial, sans-serif;
+    /* Specify the font-family you want */
+    font-size: 12px;
+    /* Specify the font-size you want */
+    font-style: normal;
+    color: #888;
+}
+
+
+button {
+    border-radius: 10px;
+    border: none;
+    background-color: #B52b19;
+    color: #ffffff;
+    width: 100px;
+    height: 25px;
+}
+
+#login button {
+    position: relative;
+    left: 100px;
+}
+
+#login button:hover {
+    background-color: black;
+}
+
+h6 {
+    color: black;
+    position: relative;
+    left: 30%;
+    top: 5%;
+}
+
+h6 a {
+    color: #B52b19;
+}
+
+.background-image {
+    margin: 0;
+    padding: 0;
+    background-image: url('imagens/imagem_login.jpg');
+    background-size: cover;
+}
+
+:root {
+    --altura_container: 450px;
+    --largura_container: 300px;
+}
+
+/* Perfil */
+
+.center-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: var(--altura_container);
+    width: var(--largura_container);
+    background-color: #B52b19;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 7vh;
+}
+
+
+#perfil {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.itens_container {
+    width: 200px;
+    height: 30px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    margin-left: calc((var(--largura_container) - 200px)/2);
+    margin-top: 15px;
+    color: #B52b19;
+}
+
+.itens_container a {
+    color: #B52b19;
+    text-decoration: none;
+}
+
+.itens_container img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 450px;
+    margin-top: 2px;
+}
+
+#sair {
+    background-color: transparent;
+    color: #B52B19;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Restaurant */
+
+.center-img-outback {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#imagem-outback {
+    max-width: 90%;
+}
+
+.end-fav {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-outback {
+    display: flex;
+}
+
+.titulo-outback img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h5 {
+    color: #B52b19;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+}
+
+
+.end-group {
+    margin-right: 10px;
+}
+
+.address button:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.fav-group {
+    display: flex;
+    align-items: center;
+}
+
+#button-fav {
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.informations {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.info-groups {
+    height: 200px;
+    width: 230px;
+    border: solid 2px #B52b19;
+    border-radius: 10px;
+}
+
+h4 {
+    color: #B52b19;
+    font-family: "Orelega One", serif;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 44px;
+}
+
+.info-groups p {
+    color: #B52b19;
+    margin-left: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.info-groups span {
+    color: #B52b19;
+    margin-left: 10px;
+    display: block;
+    margin-top: -20px;
+}
+
+.info-groups ol {
+    margin-left: 25px;
+}
+
+.info-groups button {
+    margin-left: 10px;
+    font-family: 'Orelega One', serif;
+    font-size: 15px;
+    width: 150px;
+}
+
+.info-groups form {
+    margin-left: 10px;
+}
+
+.info-groups input {
+    width: 100px;
+    margin-bottom: 15px;
+    border: solid 1px #B52b19;
+}
+
+.info-groups #people {
+    width: 50px;
+}
+
+.info-groups #available {
+    margin-left: 22px;
+    margin-top: 2px;
+}
+
+.info-groups button:hover {
+    background-color: #000;
+}
+
+
+#center-rating {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#container-ratings {
+    width: 1020px;
+    min-width: 80%;
+    height: 300px;
+    border: solid 2px #B52b19;
+    border-radius: 10px;
+}
+
+#titulo-rating {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-family: 'Orelega One', serif;
+    font-size: 30px;
+    color: #B52b19;
+    margin-right: 10px;
+}
+
+#titulo-rating img {
+    margin-top: 6px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    gap: 5px;
+}
+
+.info-rating .name-rating {
+    font-style: italic;
+}
+
+.info-rating span {
+    color: #757575;
+    font-size: 10px;
+}
+
+.info-rating .text-rating {
+    color: #121010;
+}
+
+/* History */
+
+.title-history h1 {
+    font-family: "Orelega One", sans-serif;
+    font-weight: 400;
+    color: #B52b19;
+    text-align: center;
+    font-size: 56px;
+    line-height: 61.06px;
+    text-align: center;
+}
+
+.red-box-history {
+    border: solid 1px #B52b19;
+    border-radius: 30px;
+    background-color: #B52b19;
+    color: #B52b19;
+    margin: auto;
+    height: 651px;
+    width: 800px;
+    margin-top: 50px;
+}
+
+.red-box-history .content {
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 36px;
+    color: #B52b19;
+    font-style: italic;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.box {
+    border-radius: 20px;
+    background-color: #fff;
+    margin: auto;
+    height: 127px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 27px;
+}
+
+.box p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.box .review {
+    margin-left: -125px;
+}
+
+.box .date {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #3F0D0B;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Review */
+
+.title-restaurant {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    color: #B52b19;
+    text-align: center;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    direction: rtl;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    cursor: pointer;
+    color: #ccc;
+    padding: 50px;
+    margin: 0 2px;
+    padding: 0;
+}
+
+.star-rating input[type="radio"]:checked~label,
+.star-rating input[type="radio"]:checked~label~label {
+    color: #ffc107;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: #ffc107;
+}
+
+.review-box {
+    display: block;
+    width: 40%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: 3px solid #B52b19;
+    border-radius: 8px;
+    resize: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.review-box:focus {
+    border-color: #B52b19;
+}
+
+.review-button {
+    display: block;
+    margin: 20px auto 0;
+    font-size: 20px;
+    color: #fff;
+    background-color: #B52b19;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.review-button:hover {
+    background-color: #b85346;
+}
+
+/* Historico Avaliações */
+
+main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.review-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 19px;
+}
+
+.review-container h1 {
+    font-family: 'Orelega One', serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 61.06px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #B52B19;
+}
+
+.review-history-box {
+    width: 75%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-color: #B52B19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sub-box {
+    width: 85%;
+    height: 175px;
+    border-radius: 20px;
+    border: 2px solid #B52B19;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 24.2px;
+    color: #3F0D0B;
+}
+
+.note-name-restaurant {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.review {
+    font-size: 25px;
+    color: gold;
+}
+
+.restaurant-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.description-review {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.date-review {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    font-style: italic;
+}
+
+.support-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #B52b19;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.support-button:hover {
+    background-color: #922a15;
+}
+
+/* Dados */
+
+main.content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    padding: 20px;
+    gap: 25px;
+}
+
+.container_data_side {
+    color: #B52b19;
+    background-color: #B52b19;
+    border-radius: 10px;
+    height: var(--altura_container);
+    width: var(--largura_container);
+    min-width: 300px;
+    text-align: center;
+}
+
+.container_data_side .itens_container {
+    width: 200px;
+    height: 30px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    color: #B52b19;
+    margin-left: calc((var(--largura_container) - 200px)/2);
+    margin-top: 15px;
+}
+
+.container_data {
+    width: 70%;
+    border: 2px solid #B52b19;
+    border-radius: 10px;
+    padding: 20px;
+    order: 2;
+}
+
+
+.container_data_side .itens_container a {
+    color: #B52b19;
+    text-decoration: none;
+}
+
+.container_data_side .itens_container img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 75px;
+    margin-top: 2px;
+}
+
+.user_data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    color: #B52b19;
+    margin-bottom: 15px;
+}
+
+.data_row span {
+    flex: 1;
+    font-weight: bold;
+    text-align: left;
+}
+
+.edit_button {
+    background-color: transparent;
+    color: #B52b19;
+    border: 2px solid #B52b19;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.edit_button:hover {
+    background-color: #B52b19;
+    color: #fff;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #B52b19;
+    margin: 5px 0;
+}
+
+/* Cupons */
+
+.cupons-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.cupom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.img-container {
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cupom img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.texto-dentro-moldura {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    background-color: rgb(175, 229, 194);
+    padding: 2px;
+    border-radius: 10px;
+
+}
+
+/* Favoritos */
+
+.favoritos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.favorito {
+    /* width: 30%; */
+    height: 400px;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+    width: 100%;
+    height: 80%;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+
+.favorito p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.nome-restaurante {
+    display: flex;
+    align-items: center;
+}
+
+.nome-restaurante p {
+    font-size: 20px;
+    color: #B52B19;
+    font-family: "Orelega One", serif;
+}
+
+.nome-restaurante .coracao {
+    color: red;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.avaliacao {
+    display: flex;
+    align-items: center;
+}
+
+.avaliacao .estrela {
+    color: gold;
+    margin-right: 3px;
+}
+
+.avaliacao p {
+    margin: 0 5px;
+}
+
+.avaliacao .bolinha {
+    margin: 0 3px;
+}
+
+.info-restaurante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Novidades */
+
+main.content-nov {
+    padding: 20px;
+}
+
+.align-nov {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.news-box {
+    font-family: 'montserrat', sans-serif;
+}
+
+.nov1 {
+    border: solid 1.5px #B52b19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nov2 {
+    border: solid 1.5px #B52b19;
+    border-radius: 20px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nov2 p {
+    border: solid 1.5px #B52b19;
+    text-align: center;
+    height: 50px;
+    width: 400px;
+}
+
+.nov1 hr {
+    color: #B52b19;
+    width: 500px;
+    border: solid 1px #B52b19;
+}
+
+/* Indicação */
+
+#align-codigo-promocional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--altura_container);
+    padding: 45px;
+}
+
+#codigo-promocional {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    font-family: Montserrat, sans-serif;
+}
+
+.text_codigo_promocional  h4{
+    width: 600px;
+    height: 20px;
+    padding: 20px;
+    border: 2px solid #B52B19;
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+table {
+    width: 100%;
+}
+
+.redes_sociais img {
+    height: 33px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 45%;
+}
+
+/* Parmegiana */
+
+.caixa {
+    width: 250px;
+    height: auto;
+    background-color: #B52b19; 
+    position: absolute; 
+    top: 13%; 
+}
+
+.caixa .filters-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.caixa .filters-group h1  {
+    font-family: 'Orelega One', serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: #ffffff;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    margin-top: 10%; 
+}
+
+.caixa .filters-group h4 {
+    font-family: 'Orelega One', serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #ffffff;
+    margin-left: 18px;
+}
+
+.caixa .button-filter {
+    background-color: #FCE7D8;
+    color: #EC6F40;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    font-style: italic;
+    height: 25px;
+    width: 150px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    cursor: pointer;
+    display: block; 
+}
+
+.caixa .button-filter.clicked{
+    background-color: #EC6F40;
+    color: #FCE7D8;
+}
+
+
+.caixa button{
+    border-radius: 20px;
+    border: none;
+    background-color: #B52b19;
+    color: #ffffff;
+    width: 50px;
+    height: 25px; 
+}
+
+.pratos {
+    display: flex;
+    border-top: none;
+    padding-top: none;
+    margin-left: 270px;
+}
+
+.prato {
+    flex: 1;
+    margin: 20px;
+    background-color: #FEF4EE;
+    height: 250px;
+    width: 300px;
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+
+.prato .stars {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    font-weight: bold;
+    color: #565151;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.prato img {
+    margin-top: 5px;
+    width: 99%;
+    height: 70%;
+}
+
+.prato .text {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.prato .text a {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+}
+
+.prato p {
+    color: #565151;
+    font-weight: bold;
+}
+
+.prato .address {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.prato .address img {
+    width: 15px;
+    height: 14px;
+    margin-top: -1px;
+}
+
+.prato .address p {
+    margin: 8;
+    font-size: 12px;
+    color: #565151;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.prato .price {
+    position: absolute;
+    top: 180px;
+    right: 62px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.prato .price2 {
+    position: absolute;
+    top: 180px;
+    right: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+}
+
+/* Cardapio */
+
+.pagina{
+    display: flex;
+    justify-content: space-around;
+}
+.pratos-cardapio{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.2);
+    height: 350px;
+    width: 30%;
+    margin: 10px;
+    background-color: #FEF4EE;
+}
+.pratos-cardapio img{  
+    max-width: 95%;
+    margin-top: 10px;
+}
+.text-cardapio{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    width: 93%;
+    padding-top: 15px;
+    font-style: bold;
+    font-size: 25px;
+}
+.prato1 p{
+    
+    font-family: "Montserrat", sans-serif;
+}
+
+.text span{
+    font-size:15px; 
+}
+
+

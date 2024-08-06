@@ -1,0 +1,101 @@
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/jpg" href="imagens/image.ico">
+        <title>Gourmetize</title>
+    
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <img src="imagens/logo_goumetize.jpeg" id="logo" alt="Imagem referente ao logo do Gourmetize">
+                <ul class="menuItems">
+                    <li><a href="main.html">Restaurantes</a></li>
+                    <li><a href="login.html" class="menu_history">Histórico</a></li>
+                    <li><a href="login.html" class="menu_favorites">Favoritos</a></li>
+                    <li><a href="login.html" class="menu_cupons">Cupons</a></li>
+                </ul>
+                <div id="search">
+                    <a href="search.html"><img src="imagens/search.png" id="btt_search" alt="Buscar"
+                            style="height: 23px; width: 24;" /></a>
+                </div>
+                <div class="perfil">
+                    <a href="login.html"><img src="imagens/button_login.png" alt="Clique aqui para logar na sua conta" id="button-login"/></a>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="title-pag">
+            <hr>
+            Cupons
+            <hr>
+        </div>
+        <div class="cupons-container">
+            <div class="cupom">
+                <div class="img-container">
+                    <img src="imagens/outback_cupom.png" alt="Imagem do restaurante Outback">
+                    <div class="texto-dentro-moldura">Cupom de R$15 disponível</div>
+                </div>
+              
+            </div>
+            <div class="cupom">
+                <div class="img-container">
+                    <img src="imagens/burguerking.png" alt="Imagem do restaurante Burger King">
+                    <div class="texto-dentro-moldura">Cupom de R$10 disponível</div>
+                </div>
+              
+            </div>
+            <div class="cupom">
+                <div class="img-container">
+                    <img src="imagens/comodoro.png" alt="Imagem do restaurante Comodoro Burger">
+                    <div class="texto-dentro-moldura">Cupom de R$5 disponível</div>
+                </div>
+              
+            </div>
+        </div>
+
+         <a href="mailto:gourmetize@pucpr.edu.br" class="support-button" title="Contact Gourmetize Support"></a>>
+            <i class="fa fa-comments"></i>
+        </a>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                if (localStorage.getItem("sentforms")) {
+                    // Altera o link do menu
+                    document.querySelectorAll(".menu_history").forEach(function (historyLink) {
+                        
+                        historyLink.href = "history.html";
+                    });
+                    document.querySelectorAll(".menu_favorites").forEach(function (favoritesLink) {
+                        favoritesLink.href = "favorites.html";
+                    });
+                    document.querySelectorAll(".menu_cupons").forEach(function (cuponsLink) {
+                        cuponsLink.href = "cupons.html";
+                    });
+                }})
+                document.addEventListener("DOMContentLoaded", function () {
+            if (localStorage.getItem("sentforms")) {
+                document.querySelectorAll(".perfil").forEach(function () {
+                    var img = document.getElementById("button-login")
+            
+                    if (img.src.includes("imagens/button_login")) {
+                        img.src = "imagens/login.png"
+                        
+                    }
+                    img.classList.toggle("reverse");
+                })
+                var loginLinks = document.querySelectorAll(".perfil a");
+                loginLinks.forEach(function (link) {
+                    link.href = "perfil.html";
+                });
+            }
+        })
+        </script>    </body>
+    </html>
