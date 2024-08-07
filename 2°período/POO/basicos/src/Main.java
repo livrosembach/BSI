@@ -2,14 +2,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       /* int capacityTruckBox = 50;
+        /*truck();
+        car();
+        cinema();
+        time();*/
+        paint();
+    }
+    public static void truck() {
+        int capacityTruckBox = 50;
         int capacityBox = 20;
         double weightBook = 0.100;
         int capacityTruckBook = capacityTruckBox * capacityBox;
         double weightTruck = capacityTruckBook * weightBook;
         System.out.println("Podem ser transportados " + capacityTruckBook + " livros");
-        System.out.println("O peso do caminhão na sua capacidade total é " + weightTruck + "Kg");*/
-        paint();
+        System.out.println("O peso do caminhão na sua capacidade total é " + weightTruck + "Kg");
     }
     public static void car(){
         Scanner input = new Scanner(System.in);
