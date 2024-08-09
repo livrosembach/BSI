@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BSI.iml" filepath="$PROJECT_DIR$/.idea/BSI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2°período/POO/aula01/aula01.iml" filepath="$PROJECT_DIR$/2°período/POO/aula01/aula01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2°período/POO/aula02/aula02.iml" filepath="$PROJECT_DIR$/2°período/POO/aula02/aula02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2°período/POO/basicos/basicos.iml" filepath="$PROJECT_DIR$/2°período/POO/basicos/basicos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2°período/POO/if_else/if_else.iml" filepath="$PROJECT_DIR$/2°período/POO/if_else/if_else.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2°período/POO/pbl02/pbl02.iml" filepath="$PROJECT_DIR$/2°período/POO/pbl02/pbl02.iml" />
+    </modules>
+  </component>
+</project>
