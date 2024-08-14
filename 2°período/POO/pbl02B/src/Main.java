@@ -16,9 +16,8 @@ public class Main {
             System.out.println("O número de termos tem que ser positivo. Digite novamente:");
             n = input.nextInt();
         }
-        double a_n = a_1 + (n - 1) * r;;
+        double a_n = a_1 + (n - 1) * r;
         System.out.println("O último termo da PA é: " + a_n);
         double s_n = (a_1 + a_n) * n / 2;
         System.out.println("A soma dos termos da PA é: " + s_n);
-    }
-}
+    }}
