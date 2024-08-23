@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="aula01.css">
     <title>Sistema de Venda de Camiseta</title>
     <script>
-        function realizarLogin(){
+        function realizarCadastro(){
             const email = document.getElementById("email").value;
             const senha = document.getElementById("senha").value;
 
@@ -22,6 +22,8 @@
             }
 
             console.log(`Email: ${email} Senha: ${senha}`)
+
+            if(senha.match(/^[A-Z]))
         }
         function mostrarSenha(){
             const campoSenha = document.getElementById("senha");
@@ -38,7 +40,7 @@
 
 <body>
     <div class="container" style="display: flex; flex-direction: column;justify-content: center; align-items: center;" >
-        <h2>Acesse o Sistema</h2>
+        <h2>Cadastre-se</h2>
         <form>
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
@@ -52,14 +54,15 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <button type="button" class="btn btn-primary" onclick="realizarLogin()">Submit</button>
+            <button type="button" class="btn btn-primary" onclick="realizarCadastro()">Submit</button>
             <input onclick="mostrarSenha()" type="checkbox">Mostrar Senha
         </form>
         <label class="error-label" id="campoObrigatorio">Os campos são obrigatórios</label>
         <label class="error-label" id="tamanhoSenha">A senha deve ter entre 8 e 16 caracteres</label>
+        <label class="error-label" id="senhaRedex">O campo senha precisa ter: um caracter especial e uma letra maiuscula</label>
 
         <br>
-        <a href="cadastro.html">Cadastre-se aqui</a>
+        <a href="login.html">Faça login</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

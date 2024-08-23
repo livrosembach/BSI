@@ -43,6 +43,6 @@ class empregado{
         }
     }
     public void imprimir() {
-        System.out.printf("%s recebe %s \n", this.nome, this.salario);
+        System.out.printf("Nome: %s Salario: %f Data de Nascimento: %s Cargo: %s Departamento: %s \n", this.nome, this.salario, this.dt_nasc, this.cargo,this.departamento);
     }
 }
