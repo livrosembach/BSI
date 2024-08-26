@@ -8,11 +8,11 @@ public class Main {
         funcionario sandra = new funcionario("Sandra","Advogada", "222");
         funcionario miguel = new funcionario("Miguel");
 
-        System.out.printf("Juliana recebe %s \n", juliana.salario);
-        System.out.printf("João recebe %s \n", joao.salario);
-        System.out.printf("Pedro recebe %s \n", pedro.salario);
-        System.out.printf("Sandra recebe %s \n", sandra.salario);
-        System.out.printf("Miguel recebe %s \n", miguel.salario);
+        juliana.imprimir();
+        joao.imprimir();
+        pedro.imprimir();
+        sandra.imprimir();
+        miguel.imprimir();
     }
 }
 
@@ -44,5 +44,9 @@ class funcionario{
         this.cpf = cpf;
         this.salario = 4000.00;
         this.dt_nasc = "22/05/2004";
+    }
+
+    public void imprimir() {
+        System.out.printf("Nome: %s Salário: %f Data de Nascimento: %s Cargo: %s CPF: %s \n", this.nome, this.salario, this.dt_nasc, this.cargo,this.cpf);
     }
 }
