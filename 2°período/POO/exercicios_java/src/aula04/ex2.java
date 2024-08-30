@@ -54,4 +54,5 @@ class Music{
         this.title = title;
         this.length = length;
     }
+
 }
