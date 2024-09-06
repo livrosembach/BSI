@@ -1,6 +1,6 @@
 package aula05;
 
-public class ex1 {
+public class ex01 {
     public static void main(String[] args){
         Cachorro c1 = new Cachorro("Totó");
         Gato g1 = new Gato("Garfield");
