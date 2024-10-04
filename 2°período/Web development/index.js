@@ -11,6 +11,16 @@ const port = 3000;
 const router = express.Router();
 app.use(express.json());
 
+var usuarios = [];
+
+router.post("/api/usuarios", (req, res) =>{
+  const usuario = req.body;
+  console.log(usuario);
+  usuario.id = usuarios.length + 1;
+  usuarios.push(usuario)
+  res.status(201).json(usuario);
+})
+
 router.get("/api/produtos", (req, res) => {
   console.log("Entrou no /api/produtos");
 
