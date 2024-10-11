@@ -1,25 +1,57 @@
 var express = require('express');
 var app = express();
 
-//filter
-//reduce
-//map
-
-let produtos = [];
+app.use(express.static('./pages'));
 
 const port = 3000;
 const router = express.Router();
 app.use(express.json());
 
+
 var usuarios = [];
 
-router.post("/api/usuarios", (req, res) =>{
-  const usuario = req.body;
-  console.log(usuario);
-  usuario.id = usuarios.length + 1;
-  usuarios.push(usuario)
-  res.status(201).json(usuario);
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "Lili2209*",
+  database: "aulaWeb"
 })
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected");
+});
+
+let produtos = [];
+
+
+router.post("/api/usuarios", (req, res) => {
+  const usuario = req.body;
+
+  var sql = `INSERT INTO usuario (nome, email, data, estado) 
+  values 
+  ('${usuario.nome}', 
+  '${usuario.email}', 
+  '${usuario.data}', 
+  '${usuario.estado}')`;
+
+  con.query(sql, function(err, result){
+    if(err) throw err;
+  });
+
+  res.status(201),json(usuario);
+})
+
+
+router.get("/api/usuarios", (req, res) => {
+  var sql = 'SELECT id, nome, email, estado FROM usuario';
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    res.status(200).json(result);
+  });
+});
 
 router.get("/api/produtos", (req, res) => {
   console.log("Entrou no /api/produtos");
@@ -27,7 +59,7 @@ router.get("/api/produtos", (req, res) => {
   res.status(200).json(produtos);
 })
 
-router.post("/api/produtos", (req, res) =>{
+router.post("/api/produtos", (req, res) => {
   const produto = req.body;
   console.log(produto);
   produto.id = produtos.length + 1;
@@ -35,7 +67,7 @@ router.post("/api/produtos", (req, res) =>{
   res.status(201).json(produto);
 })
 
-router.delete("/api/produtos/:id", (req,res) =>{
+router.delete("/api/produtos/:id", (req, res) => {
   const id = parseInt(req.params.id);
   console.log(produtos)
   produtos = produtos.filter(p => p.id !== id);
@@ -44,7 +76,6 @@ router.delete("/api/produtos/:id", (req,res) =>{
 
 app.use(router);
 
-app.use(express.static('./pages'));
 
 app.get('/hello', (req, res) => {
   res.send('Hello World! ');
