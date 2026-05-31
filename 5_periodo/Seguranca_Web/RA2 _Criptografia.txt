@@ -1,0 +1,14 @@
+rote Panda%
+weise Aal
+
+Comandos do exercício 2:
+
+Gera a chave privada RSA com 2048 bits -> openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -out aluno_priv.pem
+
+Extrai e exporta a chave pública a partir da chave privada -> openssl pkey -in aluno_priv.pem -pubout -out aluno_pub.pem 
+
+Decodifica o texto Base64 cifrado e salva como arquivo binário -> echo 'aO4dzmcV7A0N673RUtXxQfCbr02UW3ZU60Zuz3y1NS3ikzPcG6u+ffmNr3fmuBVE+Z6XKWUidLNrx3ug/Oj6v8WNNepvtod3eJHh7/OVPJ9s4bygA0nrSmiYCQbATFjjTEbmfInbpPprSJAusfrZgYRUaHR+14SIf1mAMzyBv/XnNt9kx2251YZnTiDbyhNaWJcowqV24I0D0wSpUj+2quqEz9P6jCdHQvn+LKUfwrtGYFWH5sySfMm5xREntDCVAQQcZeyTartGlUZeLIBDnvuG2+xx0iBdKVr0Ebt+TXqWwMdjSJpBwd/zOdHjDcXLtHDjSW76EPPT656WtkD1gA==' | base64 -d > msg.bin
+
+Descriptografa o arquivo binário usando a chave privada com padding OAEP e salva o resultado -> openssl pkeyutl -decrypt -inkey aluno_priv.pem -in msg.bin -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256 > msg.txt
+
+Exibe o segredo do arquivo descriptografado -> cat msg.txt 
